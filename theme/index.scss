@@ -1,0 +1,29 @@
+@import './ia_writer_duo.scss';
+@import './ibm_plex_serif.scss';
+@import './reference_blocks.scss';
+@import './right_sidebar.scss';
+
+:root {
+  --ls-font-family: "iA Writer Duo S";
+  --ls-title-font-family: "IBM Plex Serif";
+  --ls-page-text-size: 16px;
+  --ls-page-title-size: 2rem;
+}
+
+#main-content-container {
+  justify-content: flex-start;  
+}
+
+a.journal-title, a.page-title {
+  margin-left: 1.5rem;
+  padding-left: 0;
+}
+
+.title {
+  font-family: var(--ls-title-font-family);
+}
+
+// Removing icons that I never use
+.cp__sidebar-help-btn, #left-menu, #search-button {
+  display: none;
+}

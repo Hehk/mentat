@@ -1,0 +1,14 @@
+.references-blocks {
+  .logbook, .timestamp, .warning, [data-drawer-name="logbook"] {
+    display: none;
+  }
+  
+  
+  // Getting rid of useless padding
+  .color-level {
+    padding: 0.5rem;
+  }
+  .initial {
+    margin-left: -1rem;
+  }
+}

@@ -1,0 +1,16 @@
+// Make the right sidebar scroll horizontally and have a set width
+
+.sidebar-item-list {
+  flex-direction: row;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  height: unset;
+
+  .sidebar-item {
+    min-width: 640px;
+    max-width: 640px;
+    box-shadow: none;
+    max-height: 100vh;
+    overflow-y: scroll;
+  }
+}
