@@ -1,0 +1,16 @@
+$background-color: #fff7f4;
+$text-color: #2D2828;
+
+.light-theme {
+  --ls-primary-background-color: #f3f3f3;
+  --ls-primary-text-color: #2D2828;
+  --ls-secondary-text-color: #2D2828;
+}
+
+// TODO move this out, this has more than colors now...
+.scheduled-deadlines .color-level {
+  border-radius: 0; 
+  border: 1px solid $text-color;
+  background-color: transparent;
+  margin: 0;
+}

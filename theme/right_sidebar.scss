@@ -5,6 +5,7 @@
   overflow-x: scroll;
   overflow-y: hidden;
   height: unset;
+  padding-bottom: 0;
 
   .sidebar-item {
     min-width: 640px;
@@ -13,4 +14,12 @@
     max-height: 100vh;
     overflow-y: scroll;
   }
+}
+
+.sidebar-item .page-title {
+  font-size: var(--ls-page-title-size);
+  color: var(--ls-page-text-size);
+  font-family: var(--ls-title-font-family);
+  font-weight: bold;
+  margin-left: 0;
 }
