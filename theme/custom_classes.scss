@@ -1,5 +1,16 @@
+@mixin make($name) {
+  div[data-refs-self*=".#{$name}"] {
+    @content;
+  }
+  
+  // Hide the styling tags
+  a[data-ref=".#{$name}"] {
+    display: none;
+  }
+}
+
 // #.clean removes a bunch of extra content
-[data-refs-self*=".clean"] {
+@include make("clean") {
   .custom-query {
     margin-top: 0;
     .mt-2 {
@@ -16,5 +27,16 @@
     .table-auto {
       margin: 0;
     }
+  }
+}
+
+@include make("grid") {
+  & > .block-children-container > .block-children {
+    display: grid;
+    grid-auto-flow: column;
+  }
+  
+  .time-spent {
+    display: none;
   }
 }
