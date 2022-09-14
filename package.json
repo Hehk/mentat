@@ -3,12 +3,17 @@
   "version": "1.0.0",
   "description": "my logseq code",
   "main": "index.js",
+  "type": "module",
   "scripts": {
-    "start": "sass -w theme/index.scss build/mentat.css"
+    "build": "sass theme/index.scss build/mentat.css",
+    "dev": "sass -w theme/index.scss ~/Notes/logseq/custom.css"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "sass": "^1.54.9"
+  },
+  "logseq": {
+    "id": "_cxcjusa93"
   }
 }

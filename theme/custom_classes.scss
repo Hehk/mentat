@@ -1,0 +1,20 @@
+// #.clean removes a bunch of extra content
+[data-refs-self*=".clean"] {
+  .custom-query {
+    margin-top: 0;
+    .mt-2 {
+      margin-top: 0;
+    }
+    .table-query-properties, .custom-query-title, .foldable-title {
+      display: none;
+    }
+    
+    .initial > div > .align-items {
+      display: none;
+    }
+    
+    .table-auto {
+      margin: 0;
+    }
+  }
+}

@@ -13,6 +13,10 @@
     box-shadow: none;
     max-height: 100vh;
     overflow-y: scroll;
+    
+    & > div > .initial {
+      margin-left: -1.75rem;
+    }
   }
 }
 

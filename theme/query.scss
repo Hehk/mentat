@@ -1,0 +1,16 @@
+.custom-query {
+  .lazy-visibility .color-level {
+    border-radius: 0;
+    border: 1px solid var(--ls-guideline-color);
+    padding: 0.5rem;
+    margin-top: 0;
+  }
+  
+  .breadcrumb.block-parents {
+    margin-top: 0;
+  }
+  
+  .content {
+    margin-left: 0;
+  }
+}

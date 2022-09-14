@@ -3,6 +3,9 @@
 @import './reference_blocks.scss';
 @import './right_sidebar.scss';
 @import './colors.scss';
+@import './bullets.scss';
+@import './custom_classes.scss';
+@import './query.scss';
 
 :root {
   --ls-font-family: "iA Writer Duo S";
@@ -27,4 +30,8 @@ a.journal-title, a.page-title {
 // Removing icons that I never use
 .cp__sidebar-help-btn, #left-menu, #search-button {
   display: none;
+}
+
+a.tag {
+  font-size: var(--ls-page-text-size);
 }

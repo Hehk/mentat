@@ -1,14 +1,24 @@
 .references-blocks {
-  .logbook, .timestamp, .warning, [data-drawer-name="logbook"] {
+  // I don't care about these extra things when inside a reference block
+  // I just want the content
+  .logbook, .timestamp, .warning, [data-drawer-name="logbook"], .time-spent {
     display: none;
   }
   
-  
-  // Getting rid of useless padding
-  .color-level {
-    padding: 0.5rem;
-  }
   .initial {
     margin-left: -1rem;
   }
+}
+
+.scheduled-deadlines .color-level {
+  border-radius: 0; 
+  border-top: 0;
+  background-color: transparent;
+  margin: 0;
+  padding: 0.5rem 0;
+}
+
+.flex-1.flex-row.foldable-title.cursor .font-bold.opacity-50 {
+  font-size: var(--ls-page-title-size);
+  font-family: var(--ls-title-font-family);
 }
