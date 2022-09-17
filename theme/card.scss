@@ -1,10 +1,26 @@
 div[data-refs-self*='"card"'] {
   box-shadow: none;
-  border: 1px solid var(--ls-guideline-color);
-  border-left: 0;
-  background-color: #fff;
-  border-radius: 0;
+  border: 1px solid var(--black);
+  background-color: var(--color-level-1);
+  // border-radius: 0;
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
   margin-bottom: 0.5rem;
+
+  $offset: 0.5rem;
+  margin-left: $offset;
+  > div {
+    margin-left: -1 * $offset;
+  }
+  > .block-children-container {
+    margin-left: calc(29px - #{$offset}) !important;
+  }
+}
+
+.page-reference[data-ref="bidirectional"],
+a[data-ref="bidirectional"],
+.page-reference[data-ref="card"],
+a[data-ref="card"] {
+  color: var(--orange);
+  opacity: 1;
 }
