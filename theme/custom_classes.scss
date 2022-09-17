@@ -2,7 +2,7 @@
   div[data-refs-self*=".#{$name}"] {
     @content;
   }
-  
+
   // Hide the styling tags
   a[data-ref=".#{$name}"] {
     display: none;
@@ -16,18 +16,20 @@
     .mt-2 {
       margin-top: 0;
     }
-    .table-query-properties, .custom-query-title, .foldable-title {
+    .table-query-properties,
+    .custom-query-title,
+    .foldable-title {
       display: none;
     }
-    
+
     .initial > div > .align-items {
       display: none;
     }
-    
+
     .table-auto {
       margin: 0;
     }
-    
+
     .breadcrumb {
       display: none;
     }
@@ -39,7 +41,7 @@
     display: grid;
     grid-auto-flow: column;
   }
-  
+
   .time-spent {
     display: none;
   }

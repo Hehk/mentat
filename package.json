@@ -7,7 +7,7 @@
   "scripts": {
     "build": "sass theme/index.scss build/mentat.css",
     "dev": "sass -w theme/index.scss ~/Notes/logseq/custom.css",
-    "format": "prettier write ."
+    "format": "prettier --write ."
   },
   "author": "",
   "license": "ISC",
