@@ -1,13 +1,13 @@
-@import './ia_writer_duo.scss';
-@import './ibm_plex_serif.scss';
-@import './reference_blocks.scss';
-@import './right_sidebar.scss';
-@import './colors.scss';
-@import './bullets.scss';
-@import './custom_classes.scss';
-@import './query.scss';
-@import './card.scss';
-@import './modal.scss';
+@import "./ia_writer_duo.scss";
+@import "./ibm_plex_serif.scss";
+@import "./reference_blocks.scss";
+@import "./right_sidebar.scss";
+@import "./colors.scss";
+@import "./bullets.scss";
+@import "./custom_classes.scss";
+@import "./query.scss";
+@import "./card.scss";
+@import "./modal.scss";
 
 :root {
   --ls-font-family: "iA Writer Duo S";
@@ -17,20 +17,38 @@
 }
 
 #main-content-container {
-  justify-content: flex-start;  
+  justify-content: flex-start;
 }
 
-a.journal-title, a.page-title {
+a.journal-title,
+a.page-title {
   margin-left: 1.5rem;
   padding-left: 0;
 }
 
 .title {
   font-family: var(--ls-title-font-family);
+  font-weight: 300;
+}
+
+.page-ref {
+  color: var(--ls-primary-text-color);
+  text-decoration: underline;
+  text-underline-position: under;
+}
+
+.ls-block h1,
+.ls-block h2,
+.editor-inner .h1.uniline-block,
+.editor-inner .h2.uniline-block {
+  border-bottom: none;
+  margin-top: 0;
 }
 
 // Removing icons that I never use
-.cp__sidebar-help-btn, #left-menu, #search-button {
+.cp__sidebar-help-btn,
+#left-menu,
+#search-button {
   display: none;
 }
 
@@ -39,9 +57,9 @@ a.tag {
 }
 
 // #app-container {
-    // background: linear-gradient(to right,
-        // hsl(98 100% 62%),
-        // hsl(204 100% 59%));
-    // -webkit-background-clip: text;
-    // -webkit-text-fill-color: transparent;
+// background: linear-gradient(to right,
+// hsl(98 100% 62%),
+// hsl(204 100% 59%));
+// -webkit-background-clip: text;
+// -webkit-text-fill-color: transparent;
 // }

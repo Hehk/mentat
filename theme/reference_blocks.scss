@@ -1,21 +1,22 @@
 .references-blocks {
   // I don't care about these extra things when inside a reference block
   // I just want the content
-  .logbook, .timestamp, .warning, [data-drawer-name="logbook"], .time-spent {
+  .logbook,
+  .timestamp,
+  .warning,
+  [data-drawer-name="logbook"],
+  .time-spent {
     display: none;
   }
-  
+
   .initial {
     margin-left: -1rem;
   }
-}
 
-.scheduled-deadlines .color-level {
-  border-radius: 0; 
-  border-top: 0;
-  background-color: transparent;
-  margin: 0;
-  padding: 0.5rem 0;
+  .color-level {
+    border: 1px solid var(--black);
+    padding: 0.5rem;
+  }
 }
 
 .flex-1.flex-row.foldable-title.cursor .font-bold.opacity-50 {

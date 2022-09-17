@@ -1,8 +1,35 @@
-$background-color: #fff7f4;
-$text-color: #2D2828;
+// Trying out this palette https://coolors.co/palette/f06543-e8e9eb-e0dfd5-313638-f09d51
+
+$white: #e8e9eb;
+$black: #313638;
+$orange: #f09d51;
+$dark-orange: #f06543;
+$gray: #e0dfd5;
 
 .light-theme {
-  --ls-primary-background-color: #f3f3f3;
-  --ls-primary-text-color: #2D2828;
-  --ls-secondary-text-color: #2D2828;
+  --black: #{$black};
+  --ls-primary-background-color: #{$white};
+  --ls-primary-text-color: #{$black};
+  --ls-secondary-text-color: #{$black};
+
+  --ls-page-checkbox-color: #{$dark-orange};
+  --ls-link-text-color: #{$dark-orange};
+  --ls-tag-text-color: #{$dark-orange};
+  --ls-tag-text-opacity: 1;
+  --color-level-1: #{$gray};
+}
+
+.dark-theme {
+  --ls-primary-background-color: #27292d;
+  --ls-primary-text-color: hsla(0, 0%, 100%, 0.8);
+  --ls-secondary-text-color: hsla(0, 0%, 100%, 0.8);
+  --ls-title-text-color: hsla(0, 0%, 100%, 0.8);
+  --ls-slide-background-color: #fff;
+  --ls-block-bullet-border-color: #dedede;
+  --ls-block-bullet-color: rgba(67, 63, 56, 0.25);
+  --ls-border-color: #ccc;
+  --ls-secondary-border-color: #e2e2e2;
+  --ls-tertiary-border-color: rgba(200, 200, 200, 0.3);
+  --ls-guideline-color: rgba(200, 200, 200, 0.3);
+  --ls-quaternary-background-color: rgba(200, 200, 200, 0.3);
 }

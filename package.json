@@ -6,7 +6,8 @@
   "type": "module",
   "scripts": {
     "build": "sass theme/index.scss build/mentat.css",
-    "dev": "sass -w theme/index.scss ~/Notes/logseq/custom.css"
+    "dev": "sass -w theme/index.scss ~/Notes/logseq/custom.css",
+    "format": "prettier write ."
   },
   "author": "",
   "license": "ISC",
@@ -15,5 +16,8 @@
   },
   "logseq": {
     "id": "_cxcjusa93"
+  },
+  "dependencies": {
+    "prettier": "^2.7.1"
   }
 }
