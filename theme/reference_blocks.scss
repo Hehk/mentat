@@ -23,3 +23,9 @@
   font-size: var(--ls-page-title-size);
   font-family: var(--ls-title-font-family);
 }
+
+.block-properties.page-properties {
+  background-color: var(--color-level-1);
+  border: 1px solid black;
+  border-radius: 0.25rem;
+}

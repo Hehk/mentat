@@ -56,10 +56,12 @@ a.tag {
   font-size: var(--ls-page-text-size);
 }
 
-// #app-container {
-// background: linear-gradient(to right,
-// hsl(98 100% 62%),
-// hsl(204 100% 59%));
-// -webkit-background-clip: text;
-// -webkit-text-fill-color: transparent;
-// }
+.page-reference:hover {
+  background-color: transparent;
+  .bracket {
+    color: var(--orange);
+  }
+  .page-ref {
+    color: var(--dark-orange);
+  }
+}

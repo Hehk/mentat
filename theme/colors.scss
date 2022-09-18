@@ -8,7 +8,10 @@ $gray: #e0dfd5;
 
 .light-theme {
   --black: #{$black};
+  --white: #{$white};
   --orange: #{$orange};
+  --dark-orange: #{$dark-orange};
+  --gray: #{$gray};
   --ls-primary-background-color: #{$white};
   --ls-primary-text-color: #{$black};
   --ls-secondary-text-color: #{$black};

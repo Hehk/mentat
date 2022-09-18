@@ -13,11 +13,20 @@
     box-shadow: none;
     max-height: 100vh;
     overflow-y: scroll;
+    background-color: var(--white);
 
     & > div > .initial {
       margin-left: -1.75rem;
     }
   }
+}
+
+.cp__right-sidebar-topbar {
+  background-color: var(--white);
+}
+
+#right-sidebar {
+  background-color: var(--white);
 }
 
 .sidebar-item .page-title {

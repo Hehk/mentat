@@ -1,7 +1,8 @@
 .custom-query {
   .lazy-visibility .color-level {
-    border-radius: 0;
-    border: 1px solid var(--ls-guideline-color);
+    border-radius: 0.25rem;
+    border: 1px solid var(--ls-primary-text-color);
+    background-color: var(--gray);
     padding: 0.5rem;
     margin-top: 0;
   }
