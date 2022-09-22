@@ -39,6 +39,7 @@
   @include block;
 }
 
-.embed-block {
+.embed-block,
+.embed.embed-page {
   @include block;
 }
