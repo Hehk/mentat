@@ -1,3 +1,10 @@
+@mixin block {
+  border: 1px solid var(--black);
+  background-color: var(--gray);
+  box-shadow: 0.25rem 0.25rem var(--black);
+  border-radius: 0.25rem;
+}
+
 .references-blocks {
   // I don't care about these extra things when inside a reference block
   // I just want the content
@@ -14,8 +21,8 @@
   }
 
   .color-level {
-    border: 1px solid var(--black);
     padding: 0.5rem;
+    @include block;
   }
 }
 
@@ -24,8 +31,14 @@
   font-family: var(--ls-title-font-family);
 }
 
-.block-properties.page-properties {
-  background-color: var(--color-level-1);
-  border: 1px solid black;
-  border-radius: 0.25rem;
+.custom-query .fade-enter > .color-level {
+  @include block;
+}
+
+.block-properties {
+  @include block;
+}
+
+.embed-block {
+  @include block;
 }
