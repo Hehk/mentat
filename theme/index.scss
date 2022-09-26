@@ -31,10 +31,12 @@ a.page-title {
   font-weight: 300;
 }
 
-.page-ref {
+.page-ref,
+.external-link {
   color: var(--ls-primary-text-color);
   text-decoration: underline;
   text-underline-position: under;
+  border-bottom: 0;
 }
 
 .ls-block h1,
