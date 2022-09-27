@@ -37,6 +37,19 @@ a.page-title {
   text-decoration: underline;
   text-underline-position: under;
   border-bottom: 0;
+  &:hover {
+    color: var(--ls-primary-text-color);
+  }
+}
+.references-blocks .page-reference:hover,
+.page-reference:hover {
+  background-color: transparent;
+  .bracket {
+    color: var(--orange);
+  }
+  .page-ref {
+    color: var(--orange);
+  }
 }
 
 .ls-block h1,
@@ -56,14 +69,4 @@ a.page-title {
 
 a.tag {
   font-size: var(--ls-page-text-size);
-}
-
-.page-reference:hover {
-  background-color: transparent;
-  .bracket {
-    color: var(--orange);
-  }
-  .page-ref {
-    color: var(--dark-orange);
-  }
 }

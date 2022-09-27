@@ -1,0 +1,8 @@
+// Helper functions
+
+@mixin block {
+  border: 1px solid var(--black);
+  background-color: var(--gray);
+  box-shadow: 0.25rem 0.25rem var(--black);
+  border-radius: 0.25rem;
+}

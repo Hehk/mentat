@@ -1,9 +1,4 @@
-@mixin block {
-  border: 1px solid var(--black);
-  background-color: var(--gray);
-  box-shadow: 0.25rem 0.25rem var(--black);
-  border-radius: 0.25rem;
-}
+@use "./f.scss";
 
 .references-blocks {
   // I don't care about these extra things when inside a reference block
@@ -22,7 +17,7 @@
 
   .color-level {
     padding: 0.5rem;
-    @include block;
+    @include f.block;
   }
 }
 
@@ -32,14 +27,14 @@
 }
 
 .custom-query .fade-enter > .color-level {
-  @include block;
+  @include f.block;
 }
 
 .block-properties {
-  @include block;
+  @include f.block;
 }
 
 .embed-block,
 .embed.embed-page {
-  @include block;
+  @include f.block;
 }

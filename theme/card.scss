@@ -1,11 +1,10 @@
+@use "./f.scss";
+
 div[data-refs-self*='"card"'] {
-  box-shadow: none;
-  border: 1px solid var(--black);
-  background-color: var(--color-level-1);
-  // border-radius: 0;
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
   margin-bottom: 0.5rem;
+  @include f.block;
 
   $offset: 1rem;
   margin-left: $offset;
