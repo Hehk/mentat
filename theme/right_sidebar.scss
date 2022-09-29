@@ -17,6 +17,11 @@
 
     & > div > .initial {
       margin-left: -1.75rem;
+
+      .references,
+      .page-hierarchy {
+        margin-left: 2rem;
+      }
     }
   }
 }
