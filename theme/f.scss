@@ -1,9 +1,8 @@
 // Helper functions
 
 @mixin block {
-  border: 1px solid var(--ls-primary-text-color);
-  box-shadow: 0.25rem 0.25rem var(--ls-primary-text-color);
+  border: 1px solid var(--ls-secondary-text-color);
+  box-shadow: none;
   background-color: var(--color-level-1);
   border-radius: 0;
-  transition: 0.25s ease box-shadow;
 }

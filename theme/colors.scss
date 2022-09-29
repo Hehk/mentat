@@ -24,14 +24,26 @@ $red-900: #7f1d1d;
 .light-theme {
   --ls-primary-background-color: #{$stone-100};
   --ls-primary-text-color: #{$stone-900};
-  --ls-secondary-text-color: #{$stone-700};
+  --ls-secondary-text-color: #{$stone-400};
 
   --ls-page-checkbox-color: #{$red-600};
   --ls-link-text-color: #{$red-600};
   --ls-tag-text-color: #{$red-600};
   --ls-tag-text-opacity: 1;
-  --color-level-1: #{$stone-200};
-  --color-level-2: #{$stone-300};
+  --color-level-1: #{$stone-50};
+  --color-level-2: #{$stone-100};
+  --color-level-3: #{$stone-200};
+  --color-level-4: #{$stone-300};
+  --color-level-5: #{$stone-400};
+  --color-level-6: #{$stone-500};
+  --color-level-7: #{$stone-600};
+  --accent-color-1: #{$red-100};
+  --accent-color-2: #{$red-200};
+  --accent-color-3: #{$red-300};
+  --accent-color-4: #{$red-400};
+  --accent-color-5: #{$red-500};
+  --accent-color-6: #{$red-600};
+  --accent-color-7: #{$red-700};
 }
 
 .dark-theme {

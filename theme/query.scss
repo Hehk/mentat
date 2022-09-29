@@ -1,7 +1,8 @@
+@use "./f";
+
 .custom-query {
   .lazy-visibility .color-level {
-    border-radius: 0.25rem;
-    border: 1px solid var(--ls-primary-text-color);
+    @include f.block;
     padding: 0.5rem;
     margin-top: 0;
   }

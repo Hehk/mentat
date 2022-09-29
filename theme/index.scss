@@ -8,6 +8,7 @@
 @import "./query.scss";
 @import "./card.scss";
 @import "./modal.scss";
+@import "./left_sidebar.scss";
 
 :root {
   --ls-font-family: "iA Writer Duo S";
@@ -69,4 +70,30 @@ a.page-title {
 
 a.tag {
   font-size: var(--ls-page-text-size);
+}
+
+div {
+  &::-webkit-scrollbar {
+    background-color: transparent;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: var(--color-level-4);
+  }
+}
+
+#main-content-container::-webkit-scrollbar-thumb {
+  background-color: transparent;
+}
+
+#left-container {
+  flex: 0 0 auto;
+}
+#main-content {
+  width: fit-content;
+}
+#right-sidebar {
+  border-left: 1px solid var(--ls-secondary-text-color);
+  width: unset !important;
+  min-width: 40rem;
 }
