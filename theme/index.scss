@@ -100,3 +100,7 @@ div {
 .resizer {
   display: none;
 }
+
+a:hover > .bullet-container .bullet.bullet {
+  background-color: var(--ls-secondary-link-text-color);
+}

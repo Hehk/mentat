@@ -26,8 +26,15 @@ $red-900: #7f1d1d;
   --ls-primary-text-color: #{$stone-900};
   --ls-secondary-text-color: #{$stone-400};
 
+  --ls-block-bullet-color: #{$stone-300};
+  --ls-block-bullet-border-color: #{$stone-200};
+
   --ls-page-checkbox-color: #{$red-600};
   --ls-link-text-color: #{$red-600};
+  --ls-link-text-hover-color: #{$red-600};
+  --ls-tag-text-hover-color: #{$red-600};
+  --ls-secondary-link-text-color: #{$red-400};
+
   --ls-tag-text-color: #{$red-600};
   --ls-tag-text-opacity: 1;
   --color-level-1: #{$stone-50};
