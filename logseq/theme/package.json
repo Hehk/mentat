@@ -1,0 +1,17 @@
+{
+  "name": "mentat",
+  "version": "0.0.1",
+  "author": "hehk",
+  "main": "index.html",
+  "description": "Adds spice to logseq",
+  "logseq": {
+    "id": "_mentat_t",
+    "icon": "../mentat.jpeg",
+    "themes": [
+      {
+        "name": "Mentat Theme",
+        "url": "../build/index.css"
+      }
+    ]
+  }
+}

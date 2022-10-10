@@ -21,6 +21,35 @@ $red-700: #b91c1c;
 $red-800: #991b1b;
 $red-900: #7f1d1d;
 
+// red-200 to fuchsia-200
+$gradient-light: linear-gradient(
+  55deg,
+  hsl(288deg 96% 91%) 0%,
+  hsl(300deg 77% 89%) 11%,
+  hsl(311deg 87% 90%) 22%,
+  hsl(320deg 96% 90%) 33%,
+  hsl(327deg 100% 90%) 44%,
+  hsl(332deg 100% 90%) 56%,
+  hsl(338deg 100% 90%) 67%,
+  hsl(343deg 100% 90%) 78%,
+  hsl(348deg 100% 90%) 89%,
+  hsl(353deg 96% 90%) 100%
+);
+
+$gradient: linear-gradient(
+  55deg,
+  hsl(293deg 69% 49%) 0%,
+  hsl(304deg 89% 43%) 11%,
+  hsl(311deg 100% 42%) 22%,
+  hsl(317deg 100% 44%) 33%,
+  hsl(322deg 100% 45%) 44%,
+  hsl(327deg 100% 46%) 56%,
+  hsl(331deg 100% 46%) 67%,
+  hsl(335deg 100% 45%) 78%,
+  hsl(338deg 99% 45%) 89%,
+  hsl(347deg 77% 50%) 100%
+);
+
 .light-theme {
   --ls-primary-background-color: #{$stone-100};
   --ls-primary-text-color: #{$stone-900};
@@ -51,6 +80,8 @@ $red-900: #7f1d1d;
   --accent-color-5: #{$red-500};
   --accent-color-6: #{$red-600};
   --accent-color-7: #{$red-700};
+  --gradient-light: #{$gradient-light};
+  --gradient: #{$gradient};
 }
 
 .dark-theme {

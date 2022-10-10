@@ -9,6 +9,7 @@
 @import "./card.scss";
 @import "./modal.scss";
 @import "./left_sidebar.scss";
+@import "./block_page.scss";
 
 :root {
   --ls-font-family: "iA Writer Duo S";
@@ -100,7 +101,24 @@ div {
 .resizer {
   display: none;
 }
+.extensions__pdf-resizer {
+  top: 0;
+  bottom: 0;
+  height: unset;
+  &:hover,
+  &:active {
+    background-color: var(--ls-secondary-text-color);
+  }
+}
 
 a:hover > .bullet-container .bullet.bullet {
   background-color: var(--ls-secondary-link-text-color);
+}
+
+:not(pre):not(mark) > code {
+  background-color: transparent;
+  background-image: var(--gradient-light);
+  border-radius: 0;
+  // I use a duospace font already for text
+  font-family: var(--ls-font-family);
 }

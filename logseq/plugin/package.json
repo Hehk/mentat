@@ -1,0 +1,11 @@
+{
+  "name": "mentat",
+  "version": "0.0.1",
+  "author": "hehk",
+  "main": "index.html",
+  "description": "Adds spice to logseq",
+  "logseq": {
+    "id": "_mentat_p",
+    "icon": "../mentat.jpeg"
+  }
+}
