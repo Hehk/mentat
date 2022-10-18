@@ -1,9 +1,26 @@
-// TODO start setting this up
-// This will connect with the plugin to run local scripts
+import openInVsCode from "./open_in_vscode"
+import { port } from "../config"
 
 export default {
-  port: 9000,
-  fetch(request) {
-    console.log(request)
+  port,
+  async fetch(request: Request) {
+    const url = new URL(request.url)
+    const method = request.method
+    const match = (pattern: RegExp, requestMethod: string) => {
+      return url.pathname.match(pattern) && method === requestMethod
+    }
+
+    let value
+    switch (true) {
+      case match(/^\/open_in_vscode$/, "POST"):
+        value = openInVsCode(await request.json())
+        break
+    }
+
+    if (value) {
+      return new Response(JSON.stringify(value))
+    } else {
+      return new Response("Hoi!")
+    }
   },
 }
