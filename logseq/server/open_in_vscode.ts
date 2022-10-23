@@ -17,7 +17,12 @@ export default async function openInVsCode({ name }: { name: string }) {
   const regex = new RegExp(`^${name.replace("/", ".")}.md$`)
   const notesDir = path.resolve(path.resolve(cwd, "../../../Notes/pages"))
   const pages = await readDir(notesDir)
-  const page = pages.find((filename) => regex.test(filename))
+  const page = pages.find((filename) => {
+    const fixedFilename = filename.replace("%2F", "/")
+
+    return regex.test(fixedFilename)
+  })
+  if (!page) return
 
   const file = path.join(notesDir, page)
   spawn(["code", file])
