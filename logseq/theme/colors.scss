@@ -85,16 +85,16 @@ $gradient: linear-gradient(
 }
 
 .dark-theme {
-  --ls-primary-background-color: #27292d;
-  --ls-primary-text-color: hsla(0, 0%, 100%, 0.8);
-  --ls-secondary-text-color: hsla(0, 0%, 100%, 0.8);
-  --ls-title-text-color: hsla(0, 0%, 100%, 0.8);
-  --ls-slide-background-color: #fff;
-  --ls-block-bullet-border-color: #dedede;
-  --ls-block-bullet-color: rgba(67, 63, 56, 0.25);
-  --ls-border-color: #ccc;
-  --ls-secondary-border-color: #e2e2e2;
-  --ls-tertiary-border-color: rgba(200, 200, 200, 0.3);
-  --ls-guideline-color: rgba(200, 200, 200, 0.3);
-  --ls-quaternary-background-color: rgba(200, 200, 200, 0.3);
+  --ls-primary-background-color: #{$stone-900};
+  --ls-primary-text-color: #{$stone-100};
+  --ls-secondary-text-color: #{$stone-400};
+
+  --ls-block-bullet-color: #{$stone-700};
+  --ls-block-bullet-border-color: #{$stone-800};
+
+  --ls-page-checkbox-color: #{$red-400};
+  --ls-link-text-color: #{$red-400};
+  --ls-link-text-hover-color: #{$red-400};
+  --ls-tag-text-hover-color: #{$red-400};
+  --ls-secondary-link-text-color: #{$red-600};
 }
