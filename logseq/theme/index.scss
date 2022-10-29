@@ -1,4 +1,3 @@
-@import "./ia_writer_duo.scss";
 @import "./reference_blocks.scss";
 @import "./right_sidebar.scss";
 @import "./colors.scss";
@@ -10,15 +9,19 @@
 @import "./left_sidebar.scss";
 @import "./block_page.scss";
 
+@import url("https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+
 :root {
-  --ls-font-family: "iA Writer Duo S";
-  --ls-title-font-family: "IBM Plex Serif";
-  --ls-page-text-size: 14px;
-  --ls-page-title-size: 2rem;
+  --ls-font-family: "Lora", serif;
+  --ls-page-text-size: 16px;
+  --ls-page-title-size: 3rem;
 }
 
 #main-content-container {
   justify-content: flex-start;
+  width: 48rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 
 a.journal-title,
@@ -27,30 +30,61 @@ a.page-title {
   padding-left: 0;
 }
 
+h1.title,
 .title {
-  font-family: var(--ls-title-font-family);
-  font-weight: 300;
+  font-family: var(--ls-font-family);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  .ls-block & {
+    margin-top: 1rem;
+  }
+  font-weight: normal !important;
+}
+
+h1:before {
+  font-size: 2rem;
+  color: var(--ls-secondary-text-color);
+  content: "# ";
 }
 
 .page-ref,
 .external-link {
   color: var(--ls-primary-text-color);
-  text-decoration: underline;
-  text-underline-position: under;
   border-bottom: 0;
   &:hover {
     color: var(--ls-primary-text-color);
   }
+  text-decoration: underline;
+  text-underline-offset: 4px;
+  text-decoration-thickness: 2px;
 }
-.references-blocks .page-reference:hover,
-.page-reference:hover {
-  background-color: transparent;
-  .bracket {
-    color: var(--orange);
+.page-ref {
+  text-decoration-color: transparent;
+}
+.external-link {
+  text-decoration-color: var(--accent-color-3);
+}
+.page-reference {
+  .text-gray-500 {
+    color: var(--ls-secondary-text-color);
   }
-  .page-ref {
-    color: var(--orange);
+  &:hover .page-ref {
+    text-decoration-color: var(--accent-color-3);
   }
+}
+
+a.tag {
+  color: var(--ls-primary-text-color);
+  text-decoration: underline;
+  text-underline-offset: 4px;
+  text-decoration-thickness: 2px;
+  text-decoration-color: var(--accent-color-3);
 }
 
 .ls-block h1,
@@ -58,7 +92,6 @@ a.page-title {
 .editor-inner .h1.uniline-block,
 .editor-inner .h2.uniline-block {
   border-bottom: none;
-  margin-top: 0;
 }
 
 // Removing icons that I never use
@@ -93,7 +126,6 @@ div {
   width: fit-content;
 }
 #right-sidebar {
-  border-left: 1px solid var(--ls-secondary-text-color);
   width: unset !important;
   min-width: 40rem;
 }
@@ -120,4 +152,15 @@ a:hover > .bullet-container .bullet.bullet {
   border-radius: 0;
   // I use a duospace font already for text
   font-family: var(--ls-font-family);
+}
+
+#head,
+.cp__right-sidebar-topbar {
+  opacity: 0;
+  position: absolute;
+  top: 0;
+
+  &:hover {
+    opacity: 1;
+  }
 }

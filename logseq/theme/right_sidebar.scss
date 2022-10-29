@@ -5,7 +5,6 @@
   overflow-x: scroll;
   overflow-y: hidden;
   height: unset;
-  padding-bottom: 0;
 
   .sidebar-item {
     min-width: 640px;
@@ -15,12 +14,41 @@
     overflow-y: scroll;
     background-color: var(--white);
 
-    & > div > .initial {
-      margin-left: -1.75rem;
+    position: relative;
+    overflow: none;
+    padding: 0;
+    .page-title,
+    .breadcrumb {
+      writing-mode: vertical-rl;
+      text-orientation: mixed;
+      font-weight: normal;
+      font-size: 2rem;
+      line-height: 3rem;
+      position: absolute;
+      left: 0;
+      top: 2rem;
+    }
+    > div > .flex {
+      height: 0;
+    }
+    > div > .flex > .flex > a {
+      display: none;
+    }
+    > div {
+      height: 100%;
+      > .initial {
+        padding-left: 2rem;
+        padding-top: 2rem;
+        overflow: scroll;
 
-      .references,
-      .page-hierarchy {
-        margin-left: 2rem;
+        & > .ml-2 {
+          margin-left: 0;
+        }
+
+        .breadcrumb {
+          writing-mode: vertical-rl;
+          text-orientation: mixed;
+        }
       }
     }
   }
