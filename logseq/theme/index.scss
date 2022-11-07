@@ -33,6 +33,7 @@ a.page-title {
 h1.title,
 .title {
   font-family: var(--ls-font-family);
+  font-weight: bold !important;
 }
 
 h1,
@@ -47,10 +48,8 @@ h6 {
   font-weight: normal !important;
 }
 
-h1:before {
-  font-size: 2rem;
-  color: var(--ls-secondary-text-color);
-  content: "# ";
+h2 {
+  font-size: 1.5rem;
 }
 
 .page-ref,

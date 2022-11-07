@@ -56,8 +56,12 @@ $green-900: #14532d;
 
 .dark-theme {
   --ls-primary-background-color: #{$stone-900};
-  --ls-primary-text-color: #{$stone-100};
+  --ls-primary-text-color: #{$stone-200};
+  --ls-title-text-color: #{$stone-200};
+
   --ls-secondary-text-color: #{$stone-400};
+
+  --ls-guideline-color: #{$stone-700};
 
   --ls-block-bullet-color: #{$stone-700};
   --ls-block-bullet-border-color: #{$stone-800};
@@ -67,4 +71,89 @@ $green-900: #14532d;
   --ls-link-text-hover-color: #{$green-400};
   --ls-tag-text-hover-color: #{$green-400};
   --ls-secondary-link-text-color: #{$green-600};
+
+  --color-level-1: #{$stone-900};
+  --color-level-2: #{$stone-800};
+  --color-level-3: #{$stone-700};
+  --color-level-4: #{$stone-600};
+  --color-level-5: #{$stone-500};
+  --color-level-6: #{$stone-400};
+  --color-level-7: #{$stone-300};
+  --accent-color-1: #{$green-100};
+  --accent-color-2: #{$green-200};
+  --accent-color-3: #{$green-300};
+  --accent-color-4: #{$green-400};
+  --accent-color-5: #{$green-500};
+  --accent-color-6: #{$green-600};
+  --accent-color-7: #{$green-700};
+
+  --ls-primary-background-color: #{$stone-900};
+  --ls-secondary-background-color: #{$stone-700};
+  --ls-tertiary-background-color: #{$stone-600};
+  --ls-quaternary-background-color: #{$stone-500};
+
+  --ls-table-tr-even-background-color: #{$stone-700};
+  --ls-active-primary-color: #{$green-600};
+  --ls-active-secondary-color: #{$green-400};
+  --ls-block-properties-background-color: #{$stone-700};
+  --ls-page-properties-background-color: #{$stone-700};
+  --ls-block-ref-link-text-color: #{$green-400};
+  --ls-search-background-color: linear-gradient(
+    90deg,
+    #021c23 0,
+    #021b21 200px,
+    #002b36
+  );
+  --ls-border-color: #{$stone-700};
+  --ls-secondary-border-color: #{$stone-400};
+  --ls-tertiary-border-color: #{$stone-300};
+  --ls-guideline-color: #{$stone-700};
+  --ls-menu-hover-color: var(--ls-secondary-background-color);
+  --ls-link-text-color: #{$green-400};
+
+  --ls-link-text-hover-color: var(--ls-active-secondary-color);
+  --ls-link-ref-text-color: var(--ls-link-text-color);
+  --ls-link-ref-text-hover-color: var(--ls-link-text-hover-color);
+  --ls-tag-text-color: var(--ls-link-text-color);
+  --ls-tag-text-hover-color: var(--ls-link-text-hover-color);
+  --ls-slide-background-color: var(--ls-primary-background-color);
+
+  --ls-block-highlight-color: #{$green-900};
+  --ls-selection-background-color: #{$green-900};
+  --ls-selection-text-color: #{$stone-50};
+
+  /*
+    --ls-page-checkbox-border-color: var(--ls-primary-background-color);
+    --ls-page-blockquote-color: var(--ls-primary-text-color);
+    --ls-page-blockquote-bg-color: var(--ls-secondary-background-color);
+    --ls-page-blockquote-border-color: var(--ls-border-color);
+    --ls-page-inline-code-color: var(--ls-primary-text-color);
+    --ls-page-inline-code-bg-color: #01222a;
+    --ls-scrollbar-foreground-color: #11505f;
+    --ls-scrollbar-background-color: rgba(30,60,67,.1);
+    --ls-scrollbar-thumb-hover-color: hsla(0,0%,100%,.2);
+    --ls-head-text-color: var(--ls-link-text-color);
+    --ls-cloze-text-color: #8fbc8f;
+    --ls-icon-color: var(--ls-link-text-color);
+    --ls-search-icon-color: var(--ls-link-text-color);
+    --ls-a-chosen-bg: var(--ls-secondary-background-color);
+    --ls-right-sidebar-code-bg-color: #04303c;
+    --ls-pie-bg-color: #01303b;
+    --ls-pie-fg-color: #0b5869;
+    --ls-highlight-color-gray: var(--color-gray-900);
+    --ls-highlight-color-red: var(--color-red-900);
+    --ls-highlight-color-yellow: var(--color-yellow-900);
+    --ls-highlight-color-green: var(--color-green-900);
+    --ls-highlight-color-blue: var(--color-blue-900);
+    --ls-highlight-color-purple: var(--color-purple-900);
+    --ls-highlight-color-pink: var(--color-pink-900);
+    --ls-error-text-color: var(--color-red-100);
+    --ls-error-background-color: var(--color-red-900);
+    --ls-warning-text-color: var(--color-yellow-100);
+    --ls-warning-background-color: var(--color-yellow-900);
+    --ls-success-text-color: var(--color-green-100);
+    --ls-success-background-color: var(--color-green-900);
+    --ls-focus-ring-color: rgba(18,98,119,.5);
+    --ls-header-button-background: #dee4ea;
+  */
 }

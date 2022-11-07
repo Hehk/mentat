@@ -10,7 +10,34 @@
   .time-spent {
     display: none;
   }
+}
 
+.scheduled-deadlines.references-blocks {
+  .color-level {
+    padding: 0;
+    margin: 0;
+    padding-top: 1rem;
+    padding-left: 1rem;
+    background-color: transparent;
+    .foldable-title {
+      pointer-events: none;
+    }
+
+    // Removing the block elements within these reference blocks because they are only todos
+    > div > .initial {
+      .ls-block {
+        .items-center {
+          display: none;
+        }
+        .block-children-left-border {
+          display: none;
+        }
+      }
+    }
+  }
+}
+
+.references-blocks:not(.scheduled-deadlines) {
   .initial {
     margin-left: -1rem;
   }
