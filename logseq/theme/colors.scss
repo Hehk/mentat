@@ -56,14 +56,14 @@ $green-900: #14532d;
 
 .dark-theme {
   --ls-primary-background-color: #{$stone-900};
-  --ls-primary-text-color: #{$stone-200};
-  --ls-title-text-color: #{$stone-200};
+  --ls-primary-text-color: #{$stone-300};
+  --ls-title-text-color: #{$stone-300};
 
   --ls-secondary-text-color: #{$stone-400};
 
   --ls-guideline-color: #{$stone-700};
 
-  --ls-block-bullet-color: #{$stone-700};
+  --ls-block-bullet-color: #{$stone-800};
   --ls-block-bullet-border-color: #{$stone-800};
 
   --ls-page-checkbox-color: #{$green-400};
@@ -88,7 +88,7 @@ $green-900: #14532d;
   --accent-color-7: #{$green-700};
 
   --ls-primary-background-color: #{$stone-900};
-  --ls-secondary-background-color: #{$stone-700};
+  --ls-secondary-background-color: #{$stone-800};
   --ls-tertiary-background-color: #{$stone-600};
   --ls-quaternary-background-color: #{$stone-500};
 
@@ -104,10 +104,10 @@ $green-900: #14532d;
     #021b21 200px,
     #002b36
   );
-  --ls-border-color: #{$stone-700};
+  --ls-border-color: #{$stone-800};
   --ls-secondary-border-color: #{$stone-400};
   --ls-tertiary-border-color: #{$stone-300};
-  --ls-guideline-color: #{$stone-700};
+  --ls-guideline-color: #{$stone-800};
   --ls-menu-hover-color: var(--ls-secondary-background-color);
   --ls-link-text-color: #{$green-400};
 
