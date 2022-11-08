@@ -125,7 +125,7 @@ div {
   width: fit-content;
 }
 #right-sidebar {
-  width: unset !important;
+  width: 100%;
   min-width: 40rem;
 }
 .resizer {
@@ -155,11 +155,9 @@ a:hover > .bullet-container .bullet.bullet {
 
 #head,
 .cp__right-sidebar-topbar {
-  opacity: 0;
-  position: absolute;
-  top: 0;
-
-  &:hover {
-    opacity: 1;
-  }
+  background-color: var(--color-level-1);
+  border-bottom: 1px solid var(--ls-guideline-color);
+}
+.cp__right-sidebar-topbar {
+  border-left: 1px solid var(--ls-guideline-color);
 }

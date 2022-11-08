@@ -6,34 +6,47 @@
   overflow-y: hidden;
   height: unset;
 
+  &.gap-2 {
+    gap: 0;
+  }
+
   .sidebar-item {
-    box-shadow: 0 1px 1px hsl(0deg 0% 0% / 0.075),
-      0 2px 2px hsl(0deg 0% 0% / 0.075), 0 4px 4px hsl(0deg 0% 0% / 0.075),
-      0 8px 8px hsl(0deg 0% 0% / 0.075), 0 16px 16px hsl(0deg 0% 0% / 0.075);
     min-width: 640px;
     max-width: 640px;
     max-height: 100vh;
     overflow-y: scroll;
-    background-color: var(--white);
+    background-color: var(--color-level-2);
+
+    &.shadow-md {
+      box-shadow: none;
+    }
 
     position: relative;
     padding: 0;
-    .page-title,
-    .breadcrumb {
+    padding-right: 1rem;
+    .page-title {
       writing-mode: vertical-rl;
       text-orientation: mixed;
       font-weight: normal;
-      font-size: 2rem;
-      line-height: 3rem;
+      font-size: 1rem;
+      line-height: 1rem;
+      width: 3rem;
+      font-weight: bold;
       position: absolute;
       left: 0;
-      top: 1rem;
+      top: 0;
+      bottom: 0;
+      padding: 1rem;
+      border: 1px solid var(--ls-guideline-color);
+      border-bottom: none;
+      border-top: none;
+      background-color: var(--color-level-1);
     }
 
     .close {
       position: absolute;
-      left: 0;
-      bottom: 1rem;
+      left: 0.75rem;
+      bottom: 3.5rem;
     }
 
     > div > .flex {
@@ -45,19 +58,21 @@
     > div {
       height: 100%;
       > .initial {
-        padding-left: 2rem;
+        padding-left: 3rem;
         padding-top: 2rem;
         overflow: scroll;
 
         & > .ml-2 {
           margin-left: 0;
         }
-
-        .breadcrumb {
-          writing-mode: vertical-rl;
-          text-orientation: mixed;
-        }
       }
+    }
+
+    .references {
+      padding-left: 1.5rem;
+    }
+    .page-hierarchy {
+      padding-left: 2rem;
     }
   }
 }
