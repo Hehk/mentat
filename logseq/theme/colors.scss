@@ -11,32 +11,44 @@ $stone-700: #44403c;
 $stone-800: #292524;
 $stone-900: #1c1917;
 
-$green-50: #f0fdf4;
-$green-100: #dcfce7;
-$green-200: #bbf7d0;
-$green-300: #86efac;
-$green-400: #4ade80;
-$green-500: #22c55e;
-$green-600: #16a34a;
-$green-700: #15803d;
-$green-800: #166534;
-$green-900: #14532d;
+$c-1: hsl(60deg 9% 98%);
+$c-2: hsl(42deg 48% 88%);
+$c-3: hsl(32deg 65% 80%);
+$c-4: hsl(23deg 78% 75%);
+$c-5: hsl(12deg 86% 73%);
+$c-6: hsl(358deg 88% 71%);
+$c-7: hsl(341deg 84% 63%);
+$c-8: hsl(324deg 73% 52%);
+$c-9: hsl(304deg 86% 40%);
+$c-10: hsl(272deg 72% 47%);
 
 .light-theme {
-  --ls-primary-background-color: #{$stone-100};
+  --gradient: linear-gradient(
+    45deg,
+    hsl(24deg 10% 10%) 0%,
+    hsl(19deg 43% 13%) 21%,
+    hsl(10deg 55% 17%) 30%,
+    hsl(356deg 60% 21%) 39%,
+    hsl(341deg 91% 22%) 46%,
+    hsl(332deg 100% 25%) 54%,
+    hsl(324deg 100% 28%) 61%,
+    hsl(312deg 100% 30%) 69%,
+    hsl(295deg 100% 32%) 79%,
+    hsl(272deg 72% 47%) 100%
+  );
   --ls-primary-text-color: #{$stone-900};
   --ls-secondary-text-color: #{$stone-500};
 
   --ls-block-bullet-color: #{$stone-300};
   --ls-block-bullet-border-color: #{$stone-200};
 
-  --ls-page-checkbox-color: #{$green-300};
-  --ls-link-text-color: #{$green-300};
-  --ls-link-text-hover-color: #{$green-300};
-  --ls-tag-text-hover-color: #{$green-300};
-  --ls-secondary-link-text-color: #{$green-300};
+  --ls-page-checkbox-color: #{$c-8};
+  --ls-link-text-color: #{$c-8};
+  --ls-link-text-hover-color: #{$c-8};
+  --ls-tag-text-hover-color: #{$c-8};
+  --ls-secondary-link-text-color: #{$c-8};
 
-  --ls-tag-text-color: #{$green-600};
+  --ls-tag-text-color: #{$c-6};
   --ls-tag-text-opacity: 1;
   --color-level-1: #{$stone-50};
   --color-level-2: #{$stone-100};
@@ -45,47 +57,119 @@ $green-900: #14532d;
   --color-level-5: #{$stone-400};
   --color-level-6: #{$stone-500};
   --color-level-7: #{$stone-600};
-  --accent-color-1: #{$green-100};
-  --accent-color-2: #{$green-200};
-  --accent-color-3: #{$green-300};
-  --accent-color-4: #{$green-400};
-  --accent-color-5: #{$green-500};
-  --accent-color-6: #{$green-600};
-  --accent-color-7: #{$green-700};
+
+  --ls-primary-background-color: #{$stone-100};
+  --ls-secondary-background-color: var(--color-level-1);
+  --ls-tertiary-background-color: var(--color-level-3);
+  --ls-quaternary-background-color: var(--color-level-4);
+  --ls-table-tr-even-background-color: var(--color-level-4);
+  --ls-active-primary-color: #{$c-8};
+  --ls-active-secondary-color: #{$c-6};
+  --ls-block-properties-background-color: var(--color-level-1);
+  --ls-page-properties-background-color: var(--color-level-1);
+  --ls-block-ref-link-text-color: #{$c-8};
+  --ls-search-background-color: var(--ls-primary-background-color);
+  --ls-border-color: #{$stone-200};
+  --ls-secondary-border-color: #{$stone-600};
+  --ls-tertiary-border-color: #{$stone-700};
+  --ls-guideline-color: #{$stone-200};
+  --ls-menu-hover-color: var(--ls-a-chosen-bg);
+  --ls-primary-text-color: #{$stone-900};
+  --ls-secondary-text-color: #{$stone-700};
+  --ls-title-text-color: var(--ls-header-button-background);
+  --ls-link-text-color: #{$c-8};
+  --ls-link-text-hover-color: #{$c-6};
+  --ls-link-ref-text-color: #{$c-8};
+  --ls-link-ref-text-hover-color: #{$c-6};
+  --ls-tag-text-color: var(--ls-link-ref-text-color);
+  --ls-tag-text-hover-color: var(--ls-link-ref-text-hover-color);
+  --ls-slide-background-color: var(--color-level-1);
+  --ls-block-bullet-border-color: #{$stone-200};
+  --ls-block-bullet-color: #{$stone-200};
+  --ls-block-highlight-color: #{$c-4};
+  --ls-selection-background-color: #{$c-6};
+  --ls-page-checkbox-color: #{$c-8};
+  --ls-page-checkbox-border-color: #{$stone-200};
+  --ls-page-blockquote-color: var(--ls-primary-text-color);
+  --ls-page-blockquote-bg-color: var(--color-level-1);
+  --ls-page-blockquote-border-color: #{$c-8};
+  --ls-page-inline-code-bg-color: var(--color-level-1);
+  --ls-page-inline-code-color: var(--ls-primary-text-color);
+  --ls-scrollbar-foreground-color: rgba(0, 0, 0, 0.1);
+  --ls-scrollbar-background-color: rgba(0, 0, 0, 0.05);
+  --ls-scrollbar-thumb-hover-color: rgba(0, 0, 0, 0.2);
+  --ls-head-text-color: var(--ls-link-text-color);
+  --ls-cloze-text-color: #{$c-10};
+  --ls-icon-color: #{$c-8};
+  --ls-search-icon-color: var(--ls-icon-color);
+  --ls-a-chosen-bg: var(--color-level-1);
+  --ls-right-sidebar-code-bg-color: var(--ls-secondary-background-color);
+  --ls-pie-bg-color: #e1e1e1;
+  --ls-pie-fg-color: #0a4a5d;
+  --ls-highlight-color-gray: var(--color-gray-100);
+  --ls-highlight-color-red: var(--color-red-100);
+  --ls-highlight-color-yellow: var(--color-yellow-100);
+  --ls-highlight-color-green: var(--color-green-100);
+  --ls-highlight-color-blue: var(--color-blue-100);
+  --ls-highlight-color-purple: var(--color-purple-100);
+  --ls-highlight-color-pink: var(--color-pink-100);
+  --ls-error-text-color: var(--color-red-800);
+  --ls-error-background-color: var(--color-red-100);
+  --ls-warning-text-color: var(--color-yellow-800);
+  --ls-warning-background-color: var(--color-yellow-100);
+  --ls-success-text-color: var(--color-green-800);
+  --ls-success-background-color: var(--color-green-100);
+  --ls-focus-ring-color: #{$c-8};
+  --ls-header-button-background: #0f1419;
 }
 
 .dark-theme {
-  --ls-primary-background-color: #{$stone-900};
+  $c-1: hsl(60deg 9% 98%);
+  $c-2: hsl(42deg 48% 88%);
+  $c-3: hsl(32deg 65% 80%);
+  $c-4: hsl(23deg 78% 75%);
+  $c-5: hsl(12deg 86% 73%);
+  $c-6: hsl(358deg 88% 71%);
+  $c-7: hsl(341deg 84% 63%);
+  $c-8: hsl(324deg 73% 52%);
+  $c-9: hsl(304deg 86% 40%);
+  $c-10: hsl(272deg 72% 47%);
+
+  --gradient: linear-gradient(
+    45deg,
+    #{$c-1} 0%,
+    #{$c-2} 11%,
+    #{$c-3} 22%,
+    #{$c-4} 33%,
+    #{$c-5} 44%,
+    #{$c-6} 56%,
+    #{$c-7} 67%,
+    #{$c-8} 78%,
+    #{$c-9} 89%,
+    #{$c-10} 100%
+  );
+
   --ls-primary-text-color: #{$stone-300};
   --ls-title-text-color: #{$stone-300};
 
   --ls-secondary-text-color: #{$stone-400};
 
-  --ls-guideline-color: #{$stone-700};
-
   --ls-block-bullet-color: #{$stone-800};
   --ls-block-bullet-border-color: #{$stone-800};
 
-  --ls-page-checkbox-color: #{$green-400};
-  --ls-link-text-color: #{$green-400};
-  --ls-link-text-hover-color: #{$green-400};
-  --ls-tag-text-hover-color: #{$green-400};
-  --ls-secondary-link-text-color: #{$green-600};
-
-  --color-level-1: #{$stone-900};
-  --color-level-2: #{$stone-800};
+  --color-level-1: #{$stone-800};
+  --color-level-2: #{$stone-900};
   --color-level-3: #{$stone-700};
   --color-level-4: #{$stone-600};
   --color-level-5: #{$stone-500};
   --color-level-6: #{$stone-400};
   --color-level-7: #{$stone-300};
-  --accent-color-1: #{$green-100};
-  --accent-color-2: #{$green-200};
-  --accent-color-3: #{$green-300};
-  --accent-color-4: #{$green-400};
-  --accent-color-5: #{$green-500};
-  --accent-color-6: #{$green-600};
-  --accent-color-7: #{$green-700};
+
+  --ls-page-checkbox-color: #{$c-8};
+  --ls-link-text-color: #{$c-8};
+  --ls-link-text-hover-color: #{$c-8};
+  --ls-tag-text-hover-color: #{$c-8};
+  --ls-secondary-link-text-color: #{$c-8};
 
   --ls-primary-background-color: #{$stone-900};
   --ls-secondary-background-color: #{$stone-800};
@@ -93,11 +177,11 @@ $green-900: #14532d;
   --ls-quaternary-background-color: #{$stone-500};
 
   --ls-table-tr-even-background-color: #{$stone-700};
-  --ls-active-primary-color: #{$green-600};
-  --ls-active-secondary-color: #{$green-400};
+  --ls-active-primary-color: #{$c-8};
+  --ls-active-secondary-color: #{$c-6};
   --ls-block-properties-background-color: #{$stone-700};
   --ls-page-properties-background-color: #{$stone-700};
-  --ls-block-ref-link-text-color: #{$green-400};
+  --ls-block-ref-link-text-color: #{$c-8};
   --ls-search-background-color: linear-gradient(
     90deg,
     #021c23 0,
@@ -107,9 +191,8 @@ $green-900: #14532d;
   --ls-border-color: #{$stone-800};
   --ls-secondary-border-color: #{$stone-400};
   --ls-tertiary-border-color: #{$stone-300};
-  --ls-guideline-color: #{$stone-800};
+  --ls-guideline-color: #{$stone-700};
   --ls-menu-hover-color: var(--ls-secondary-background-color);
-  --ls-link-text-color: #{$green-400};
 
   --ls-link-text-hover-color: var(--ls-active-secondary-color);
   --ls-link-ref-text-color: var(--ls-link-text-color);
@@ -118,8 +201,8 @@ $green-900: #14532d;
   --ls-tag-text-hover-color: var(--ls-link-text-hover-color);
   --ls-slide-background-color: var(--ls-primary-background-color);
 
-  --ls-block-highlight-color: #{$green-900};
-  --ls-selection-background-color: #{$green-900};
+  --ls-block-highlight-color: #{$c-10};
+  --ls-selection-background-color: #{$c-10};
   --ls-selection-text-color: #{$stone-50};
 
   /*
