@@ -9,10 +9,10 @@
 @import "./left_sidebar.scss";
 @import "./block_page.scss";
 
-@import url("https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,700;1,400;1,700&display=swap");
-
+@import url("https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,700;1,400;1,700&family=Nunito:ital,wght@0,400;0,700;1,400;1,700&family=Source+Code+Pro:ital,wght@0,400;0,700;1,400;1,700&display=swap");
 :root {
   --ls-font-family: "Lora", serif;
+  --font-monospace: "Source Code Pro", monospace;
   --ls-page-text-size: 16px;
   --ls-page-title-size: 3rem;
 }
@@ -34,6 +34,21 @@ h1.title,
 .title {
   font-family: var(--ls-font-family);
   font-weight: bold !important;
+  background: linear-gradient(
+    15deg,
+    hsl(60deg 9% 98%) 1%,
+    hsl(42deg 50% 90%) 35%,
+    hsl(32deg 70% 84%) 44%,
+    hsl(23deg 86% 80%) 49%,
+    hsl(13deg 98% 78%) 53%,
+    hsl(359deg 100% 78%) 58%,
+    hsl(344deg 99% 72%) 65%,
+    hsl(328deg 84% 64%) 73%,
+    hsl(307deg 62% 56%) 84%,
+    hsl(274deg 71% 59%) 100%
+  );
+  -webkit-background-clip: text;
+  color: transparent;
 }
 
 h1,
@@ -160,4 +175,13 @@ a:hover > .bullet-container .bullet.bullet {
 }
 .cp__right-sidebar-topbar {
   border-left: 1px solid var(--ls-guideline-color);
+}
+
+div::-webkit-scrollbar {
+  display: none;
+}
+
+// Just say no to padding right
+.pr-2 {
+  padding-right: 0;
 }

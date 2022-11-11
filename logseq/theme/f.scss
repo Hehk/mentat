@@ -1,7 +1,7 @@
 // Helper functions
 
 @mixin block {
-  border: 1px solid var(--ls-secondary-text-color);
+  border: 1px solid var(--ls-guideline-color);
   box-shadow: none;
   background-color: var(--color-level-1);
   border-radius: 0;

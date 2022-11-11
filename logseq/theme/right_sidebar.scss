@@ -5,6 +5,7 @@
   overflow-x: scroll;
   overflow-y: hidden;
   height: unset;
+  border-left: 1px solid var(--ls-guideline-color);
 
   &.gap-2 {
     gap: 0;
@@ -16,6 +17,11 @@
     max-height: 100vh;
     overflow-y: scroll;
     background-color: var(--color-level-2);
+
+    &:first-child {
+      border-left: none;
+    }
+    border-left: 1px solid var(--ls-guideline-color);
 
     &.shadow-md {
       box-shadow: none;
@@ -37,9 +43,7 @@
       top: 0;
       bottom: 0;
       padding: 1rem;
-      border: 1px solid var(--ls-guideline-color);
-      border-bottom: none;
-      border-top: none;
+      border-right: 1px solid var(--ls-guideline-color);
       background-color: var(--color-level-1);
     }
 
@@ -64,15 +68,21 @@
 
         & > .ml-2 {
           margin-left: 0;
+          // Allows a bit of extra scrolling at the bottom
+          padding-bottom: 50vh;
         }
       }
     }
 
     .references {
-      padding-left: 1.5rem;
+      padding-left: 1rem;
+      margin-left: 0;
+      .rotating-arrow {
+        display: none;
+      }
     }
     .page-hierarchy {
-      padding-left: 2rem;
+      padding-left: 1rem;
     }
   }
 }
